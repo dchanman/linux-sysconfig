@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# emacs: use the -nw variant by default
+#-----------------------------------------------
 alias emacs='emacs -nw'
 alias emacs-w='emacs'
 
