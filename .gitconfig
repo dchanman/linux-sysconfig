@@ -1,0 +1,17 @@
+[user]
+	name = Derek Chan
+	email = derekchan1994@gmail.com
+[difftool]
+	prompt = false
+[diff]
+	tool = meld
+[merge]
+	tool = meld
+[core]
+	editor = vim
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+[mergetool]
+	prompt = false
