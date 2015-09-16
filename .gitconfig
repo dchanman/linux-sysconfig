@@ -13,5 +13,6 @@
 	status = auto
 	diff = auto
 	branch = auto
+	ui = auto
 [mergetool]
 	prompt = false
