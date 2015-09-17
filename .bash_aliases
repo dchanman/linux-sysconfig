@@ -15,3 +15,8 @@ trash() {
 # folder navigation
 #-----------------------------------------------
 alias cdubc='cd "/home/derek/Dropbox/Work/UBC Winter 2015"'
+
+# Utility shortcuts
+#----------------------------------------------
+alias jekyll-build-and-serve='bundle exec jekyll build && bundle exec jekyll serve'
+alias rgrep='grep -r --colour'
