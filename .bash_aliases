@@ -20,3 +20,4 @@ alias cdubc='cd "/home/derek/Dropbox/Work/UBC Winter 2015"'
 #----------------------------------------------
 alias jekyll-build-and-serve='bundle exec jekyll build && bundle exec jekyll serve'
 alias rgrep='grep -r --colour'
+alias pair-mouse='sudo ltunify -d /dev/hidraw1 pair'
