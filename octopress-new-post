@@ -1,0 +1,30 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+	echo "Usage: $0 [new_post_name]"
+	exit 1
+fi
+
+BLOG_DIR="/home/derek/projects/dchanman.github.io"
+BLOG_POST_DIR="$BLOG_DIR/_posts/blog/"
+
+cd $BLOG_DIR
+
+NEW_POST_OUTPUT=`bundle exec octopress new post $@`
+NEW_POST_NAME=`sed 's/New post: \(.*\)$/\1/g' <<< $NEW_POST_OUTPUT`
+NEW_POST_FILE=`sed 's/.*\/\(.*\)/\1/g' <<< $NEW_POST_NAME`
+
+if [ -f "$BLOG_POST_DIR$NEW_POST_FILE" ]; then
+	echo
+	echo -e "Error: \e[31m"$BLOG_POST_DIR$NEW_POST_FILE"\e[0m already exists."
+	echo
+	rm $NEW_POST_NAME
+	exit 1
+fi
+
+mv $NEW_POST_NAME $BLOG_POST_DIR
+vim $BLOG_POST_DIR$NEW_POST_FILE
+
+echo
+echo -e "Created: \e[32m$BLOG_POST_DIR$NEW_POST_FILE\e[0m"
+echo
