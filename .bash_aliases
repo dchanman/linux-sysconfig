@@ -19,6 +19,6 @@ alias cdblog='cd "/home/derek/projects/dchanman.github.io/_posts/blog"'
 
 # Utility shortcuts
 #----------------------------------------------
-alias jekyll-build-and-serve='bundle exec jekyll build && bundle exec jekyll serve'
+alias jekyll-serve='bundle exec jekyll serve'
 alias rgrep='grep -r --colour'
 alias pair-mouse='sudo ltunify -d /dev/hidraw1 pair'
