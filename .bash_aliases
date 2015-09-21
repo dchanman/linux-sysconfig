@@ -15,6 +15,7 @@ trash() {
 # folder navigation
 #-----------------------------------------------
 alias cdubc='cd "/home/derek/Dropbox/Work/UBC Winter 2015"'
+alias cdblog='cd "/home/derek/projects/dchanman.github.io/_posts/blog"'
 
 # Utility shortcuts
 #----------------------------------------------
