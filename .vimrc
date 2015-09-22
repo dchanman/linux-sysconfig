@@ -1,3 +1,5 @@
+" Editor color
+:color murphy
 
 " Navigation for word wrap
 nnoremap k gk 
