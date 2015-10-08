@@ -2,10 +2,10 @@
 :color murphy
 
 " Navigation for word wrap
-nnoremap k gk 
-nnoremap j gj
-nnoremap gk k
-nnoremap gj j
+" nnoremap k gk 
+" nnoremap j gj
+" nnoremap gk k
+" nnoremap gj j
 
 " Tab widths
 set tabstop=4
@@ -18,3 +18,4 @@ autocmd BufReadPost * nested
       \   e ++ff=dos |
       \ endif
 
+filetype plugin
