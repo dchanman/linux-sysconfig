@@ -18,4 +18,4 @@ autocmd BufReadPost * nested
       \   e ++ff=dos |
       \ endif
 
-filetype plugin
+"filetype plugin
