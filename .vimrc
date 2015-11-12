@@ -1,6 +1,11 @@
 " Editor color
 :color murphy
 
+" Tab navigation
+nnoremap <F6> :tabe 
+nnoremap <F7> :tabp<CR>
+nnoremap <F8> :tabn<CR>
+
 " Navigation for word wrap
 " nnoremap k gk 
 " nnoremap j gj
@@ -17,5 +22,7 @@ autocmd BufReadPost * nested
       \   let b:reload_dos = 1 |
       \   e ++ff=dos |
       \ endif
+
+
 
 "filetype plugin
