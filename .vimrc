@@ -6,11 +6,8 @@ nnoremap <F6> :tabe
 nnoremap <F7> :tabp<CR>
 nnoremap <F8> :tabn<CR>
 
-" Navigation for word wrap
-" nnoremap k gk 
-" nnoremap j gj
-" nnoremap gk k
-" nnoremap gj j
+" Navigation shortcuts
+nmap <space> zz
 
 " Tab widths
 set tabstop=4
