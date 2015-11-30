@@ -12,6 +12,19 @@ nmap <space> zz
 " Tab widths
 set tabstop=4
 
+" If the current buffer has never been saved, it will have no name,
+" call the file browser to save it, otherwise just save it.
+" source: http://vim.wikia.com/wiki/Map_Ctrl-S_to_save_current_or_new_files
+command -nargs=0 -bar Update if &modified 
+                           \|    if empty(bufname('%'))
+                           \|        browse confirm write
+                           \|    else
+                           \|        confirm write
+                           \|    endif
+                           \|endif
+nnoremap <silent> <C-S> :<C-u>Update<CR>
+:inoremap <c-s> <c-o>:Update<CR>
+
 " autocmd to reload file with mixed line endings (^M)
 " source: http://vim.wikia.com/wiki/Automatically_reload_files_with_mixed_line-endings_in_DOS_fileformat
 autocmd BufReadPost * nested

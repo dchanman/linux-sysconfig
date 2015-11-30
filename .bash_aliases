@@ -5,6 +5,19 @@
 alias emacs='emacs -nw'
 alias emacs-w='emacs'
 
+# vim: pass ctrl-s through
+#-----------------------------------------------
+alias vim='vim_f'
+vim_f()
+{
+	# We don't have ttyctl, so save terminal settings
+    local STTYOPTS="$(stty --save)"
+    stty stop '' -ixoff
+    command vim "$@"
+	# then restore terminal settings
+    stty "$STTYOPTS"
+}
+
 # trash: move a folder or file to the trash
 #-----------------------------------------------
 trash() {
