@@ -25,6 +25,11 @@ trash() {
 	command mv "$@" /home/derek/.local/share/Trash
 }
 
+# ssh shortcuts
+#-----------------------------------------------
+alias sshece='ssh o6z8@ssh-ubuntu.ece.ubc.ca'
+alias sshcpsc='ssh o6z8@remote.ugrad.cs.ubc.ca'
+
 # folder navigation
 #-----------------------------------------------
 alias cdubc='cd "/home/derek/Dropbox/Work/UBC Winter 2015"'
@@ -37,3 +42,4 @@ alias rgrep='grep -r --colour'
 alias pair-mouse='sudo ltunify -d /dev/hidraw1 pair'
 alias goodbye='sudo shutdown -P now'
 alias pls='sudo $(history -p !!)'
+alias fix-bg='feh --bg-fill /usr/share/lxpanel/images/lubuntu-background.png'
