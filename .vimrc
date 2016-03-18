@@ -9,6 +9,10 @@ nnoremap <F8> :tabn<CR>
 :inoremap <F7> <c-o>:tabp<CR>
 :inoremap <F8> <c-o>:tabn<CR>
 
+nnoremap <C-tab> :tabn<CR>
+:inoremap <C-tab> <c-o>:tabn<CR>
+nnoremap <C-S-tab> :tabp<CR>
+:inoremap <C-S-tab> <c-o>:tabp<CR>
 
 " Navigation shortcuts
 nmap <space> zz
