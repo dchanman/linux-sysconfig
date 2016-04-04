@@ -32,7 +32,7 @@ alias sshcpsc='ssh o6z8@remote.ugrad.cs.ubc.ca'
 
 # folder navigation
 #-----------------------------------------------
-alias cdubc='cd "/home/derek/Dropbox/Work/UBC Winter 2015"'
+alias cdubc='cd "/home/derek/Dropbox/Work/ubc_winter_2016"'
 alias cdblog='cd "/home/derek/projects/dchanman.github.io/_posts/blog"'
 
 # Utility shortcuts
