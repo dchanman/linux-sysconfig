@@ -1,5 +1,6 @@
 " Editor color
 :color murphy
+syntax enable
 
 " Tab navigation
 nnoremap <F6> :tabe 
@@ -19,22 +20,23 @@ nmap <space> zz
 
 " Tab widths
 set tabstop=4
+filetype indent on
 
 " Word wrap
 set nowrap
 
-" If the current buffer has never been saved, it will have no name,
-" call the file browser to save it, otherwise just save it.
-" source: http://vim.wikia.com/wiki/Map_Ctrl-S_to_save_current_or_new_files
-command -nargs=0 -bar Update if &modified 
-                           \|    if empty(bufname('%'))
-                           \|        browse confirm write
-                           \|    else
-                           \|        confirm write
-                           \|    endif
-                           \|endif
-nnoremap <silent> <C-S> :<C-u>Update<CR>
-:inoremap <c-s> <c-o>:Update<CR>
+" Parenthesis matching
+set showmatch
+
+" Enhanced searching
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+
+" Folding
+set foldenable
+set foldmethod=syntax
+set foldlevelstart=10
+nnoremap <C--> za
 
 " autocmd to reload file with mixed line endings (^M)
 " source: http://vim.wikia.com/wiki/Automatically_reload_files_with_mixed_line-endings_in_DOS_fileformat
@@ -44,6 +46,8 @@ autocmd BufReadPost * nested
       \   e ++ff=dos |
       \ endif
 
+" Performance
+set lazyredraw
 
-
-"filetype plugin
+" Line numbers
+set number
