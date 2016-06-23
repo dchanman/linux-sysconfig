@@ -1,3 +1,4 @@
+set nocompatible
 " Editor color
 :color murphy
 
@@ -44,6 +45,9 @@ autocmd BufReadPost * nested
       \   e ++ff=dos |
       \ endif
 
+set backspace=indent,eol,start
 
+command Json %!python -m json.tool
 
-"filetype plugin
+syntax on
+set number
