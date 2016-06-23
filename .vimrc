@@ -20,6 +20,9 @@ nmap <space> zz
 " Tab widths
 set tabstop=4
 
+" Word wrap
+set nowrap
+
 " If the current buffer has never been saved, it will have no name,
 " call the file browser to save it, otherwise just save it.
 " source: http://vim.wikia.com/wiki/Map_Ctrl-S_to_save_current_or_new_files
