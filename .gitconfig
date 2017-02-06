@@ -9,6 +9,7 @@
 	tool = meld
 [core]
 	editor = vim
+	autocrlf = false
 [color]
 	status = auto
 	diff = auto

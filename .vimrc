@@ -1,5 +1,5 @@
 " Editor color
-:color murphy
+:color desert
 syntax enable
 
 " Tab navigation

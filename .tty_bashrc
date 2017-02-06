@@ -1,6 +1,7 @@
 #!/bin/bash
 if [ "$TERM" = "linux" ]; then
-    echo -en "\e]P0232323" #black
+    #echo -en "\e]P0232323" #black
+    echo -en "\e]P0000000" #black
     echo -en "\e]P82B2B2B" #darkgrey
     echo -en "\e]P1D75F5F" #darkred
     echo -en "\e]P9E33636" #red

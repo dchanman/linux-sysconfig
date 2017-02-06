@@ -29,6 +29,7 @@ trash() {
 #-----------------------------------------------
 alias sshece='ssh o6z8@ssh-ubuntu.ece.ubc.ca'
 alias sshcpsc='ssh o6z8@remote.ugrad.cs.ubc.ca'
+alias c='. cdls'
 
 # folder navigation
 #-----------------------------------------------
