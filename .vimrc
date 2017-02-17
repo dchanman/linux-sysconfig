@@ -31,6 +31,7 @@ set showmatch
 " Enhanced searching
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+nnoremap <C-?> :nohlsearch<CR>
 
 " Folding
 set foldenable
@@ -51,3 +52,5 @@ set lazyredraw
 
 " Line numbers
 set number
+nnoremap n :setlocal number!<CR>
+
