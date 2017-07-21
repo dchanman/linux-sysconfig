@@ -19,11 +19,10 @@ nnoremap <C-S-tab> :tabp<CR>
 nmap <space> zz
 
 " Tab widths
-set tabstop=4
+set tabstop=2
+set shiftwidth=2
+"set expandtab
 filetype indent on
-
-" Word wrap
-set nowrap
 
 " Parenthesis matching
 set showmatch
@@ -52,5 +51,5 @@ set lazyredraw
 
 " Line numbers
 set number
-nnoremap n :setlocal number!<CR>
+nnoremap <C-n> :setlocal number!<CR>
 

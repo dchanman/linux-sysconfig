@@ -4,7 +4,7 @@ main() {
 	BATTERY=`upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage | awk '{print $2}'`
 	USED_MEM=`free -h | grep Mem | awk '{print $3}'`
 	TOTAL_MEM=`free -h | grep Mem | awk '{print $2}'`
-	CPU=`top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1"%"}'`
+	CPU=`uptime | sed 's/.*load average: //g'`
 	TEMP=`sensors | grep temp1 | head -n 1 | sed 's/.*  +/+/'`
 	IP_ADDR=`ifconfig wlp1s0 | grep "inet addr" | awk '{print $2}' | sed 's/addr://'`
 	
